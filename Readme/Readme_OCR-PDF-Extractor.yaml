@@ -1,0 +1,36 @@
+# OCR-PDF-Extractor
+Extrae texto de PDFs escaneados usando **PyMuPDF** + **Tesseract**  
+
+---
+
+## 1. Requisitos
+
+| Software | Versión | Nota |
+|----------|---------|------|
+| **Python** | 3.9 o superior | Usá un venv para aislar dependencias |
+| **Tesseract-OCR** | 5.x 
+| Archivo de idioma | `spa.traineddata` 
+
+## 2. Instalación de Tesseract-OCR
+
+> **Windows** 
+> - Para instalar en Windows tenés que clonar el repo de git desde la tarminal >  <https://github.com/UB-Mannheim/tesseract/wiki>
+> - Agregá el ejecutable al `PATH` o pasá `--tess-cmd` en la terminal  
+> - Luego, descargá el paquete de idioma español (spa.traineddata) de acá https://github.com/tesseract-ocr/tessdata_fast/raw/main/spa.traineddata
+y desde el explorador de archivos, movelo a Tesseract>Tessdata
+
+> **Linux/macOS**  
+> `sudo apt install tesseract-ocr` --o-- `brew install tesseract`  
+> Agregá paquetes de idioma: `sudo apt install tesseract-ocr-spa`
+
+---
+
+## 2. Instalación rápida
+
+```Terminal
+# Cloná el repositorio y entrá al directorio
+git clone https://github.com/<tu_usuario>/ocr-pdf-extractor.git
+cd ocr-pdf-extractor
+
+python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt

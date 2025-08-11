@@ -1,0 +1,99 @@
+
+# Archivos y directorios de caché
+# Ignora el directorio de caché de Python
+__pycache__/
+
+# Ignora los archivos compilados de Python
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Ignora los archivos de registro de log
+*.log
+
+# Entornos virtuales
+# Es crucial no subir el entorno virtual para evitar conflictos de dependencia
+# entre diferentes máquinas. Cada desarrollador debe crear el suyo.
+.venv/
+venv/
+env/
+
+# Archivos de paquetes de Python
+# Directorios de distribución, instaladores y archivos temporales de Python
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Archivos de datos sensibles y de configuración
+# ¡Muy importante! No subas tus credenciales o claves de API.
+# Utiliza un archivo `.env` para almacenar secretos.
+.env
+
+# Modelos y datos de entrenamiento
+# Los modelos de LLM y los datos de entrenamiento pueden ser muy grandes.
+# Generalmente, no se suben al repositorio.
+# En su lugar, se utilizan servicios de almacenamiento de modelos como Hugging Face Hub.
+/models/
+/data/
+/datasets/
+*.pt  # PyTorch model files
+*.bin # Model binary files
+*.pth # PyTorch checkpoint files
+
+# Ignora archivos de la caché de bibliotecas de OCR y LLMs
+# Estos archivos se generan automáticamente y no deben ser versionados.
+.cache/
+.huggingface/
+.git_lfs_cache/
+
+# Archivos específicos de IDEs (Editores de Código)
+# Para evitar subir configuraciones personales de cada editor
+.idea/      # PyCharm
+.vscode/    # VS Code
+.project
+.DS_Store   # Archivos de macOS
+Thumbs.db   # Archivos de Windows
+
+# Resultados de la ejecución de código
+# Ignora las imágenes, PDFs u otros archivos que se generen durante el OCR.
+# Si los resultados son importantes, es mejor guardarlos en un directorio
+# específico que esté versionado.
+/output/
+/results/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+.history/
+
+# Entornos/credenciales
+.env
+*.env
+*.key
+*.pem
+
+# Cachés y artefactos
+.cache/
+logs/
+outputs/
+models/
+checkpoints/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Hugging Face / modelos locales
+huggingface/
+hf_cache/
+**/huggingface_cache/
+**/models--*/
+
+# Otros
+LLaVA
+Otros_tp
+_tmp_gpt5_preproc
