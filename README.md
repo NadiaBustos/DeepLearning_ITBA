@@ -1,4 +1,4 @@
-### **Deep Learning - Maestría Managment & Analytics**
+### **Deep Learning - Maestría Management & Analytics**
 
 # **Extracción Automatizada de Información en Cartas Documento Bancarias: Comparación de Técnicas OCR vs GPT-5**
 
@@ -22,14 +22,14 @@ El objetivo es determinar cual es el mejor método de OCR para digitalizar este 
 | OCR 2 | **Doctr**          | CNN + CTC / Transformer            |
 | OCR 3 | **LLM multimodal** | GPT-5 |
 
-Métrica de evaluación: cadenas de Levenstein
+Métrica de evaluación: cadenas de Levenshtein
 
 ## 4. Indice del repositorio
     1. Presentación general del trabajo.
     2. OCR con Tesseract (archivo readme disponible con requerimientos de sistema) + extracción de entidades con Llama 3
-    3. OCR con Doctr (readme disponible con requermientos de sistema) + extracción de entidades con Llama 3.
+    3. OCR con Doctr (readme disponible con requerimientos de sistema) + extracción de entidades con Llama 3.
     4. Transcripción con modelo multimodal (GPT-5) + extracción de entidades con Llama 3.
-    5. Evaluación con cadenas de Levenstein + conclusión general.
+    5. Evaluación con cadenas de Levenshtein + conclusión general.
 
 ## 5. Entregables
 * Carpeta con Cartas Documento de ejemplo
